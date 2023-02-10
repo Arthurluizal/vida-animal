@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIDA ANIMAL RAÇÕES</title>
+
+    <link rel="stylesheet" href="./style.css"/>
+
+    <link rel="shortcut icon" href="assests/petshop.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+
+</head>
+    <body>
+        <nav id="navigation" class="scroll">
+            <div class="wrapper">
+                <a class="logo" href="#home"> 
+                    <img src="assests/vida animal rações.png" >
+
+                </a>
+
+                <div class="menu">
+                    <ul>
+                        <li><a onclick="closeMenu()" href="#home">Início</a></li>
+                        <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+                        <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
+                    </ul>
+                    <a class="button" onclick="closeMenu()" href="https://wa.me/5522992070460" target="_blank">Faça o seu pedido</a>
+
+                    <ul class="social-links">
+                        <li>
+                            <a target="_blank"
+                            href="https://intagram.com/vianimalraçoes">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17.5 6.49997H17.51" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                
+                                </a>
+                        </li>
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://facebook.com/vianimalraçoes">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 1.99997H15C13.6739 1.99997 12.4021 2.52675 11.4645 3.46444C10.5268 4.40212 10 5.67389 10 6.99997V9.99997H7V14H10V22H14V14H17L18 9.99997H14V6.99997C14 6.73475 14.1054 6.4804 14.2929 6.29286C14.4804 6.10533 14.7348 5.99997 15 5.99997H18V1.99997Z" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                </a>
+                        </li>
+                        <li>
+                            <a
+                            target="_blank"
+                            href="https://whatsapp.com/vianimalraçoes">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.8337 11.6667C13.667 11.5833 12.5837 11.0833 12.417 11C12.2503 10.9167 12.0837 10.9167 11.917 11.0833C11.7503 11.25 11.417 11.75 11.2503 11.9167C11.167 12.0833 11.0003 12.0833 10.8337 12C10.2503 11.75 9.66699 11.4167 9.16699 11C8.75033 10.5833 8.33366 10.0833 8.00033 9.58334C7.91699 9.41668 8.00033 9.25001 8.08366 9.16668C8.16699 9.08334 8.25033 8.91668 8.41699 8.83334C8.50033 8.75001 8.58366 8.58334 8.58366 8.50001C8.66699 8.41668 8.66699 8.25001 8.58366 8.16668C8.50033 8.08334 8.08366 7.08334 7.91699 6.66668C7.83366 6.08334 7.66699 6.08334 7.50033 6.08334C7.41699 6.08334 7.25033 6.08334 7.08366 6.08334C6.91699 6.08334 6.66699 6.25001 6.58366 6.33334C6.08366 6.83334 5.83366 7.41668 5.83366 8.08334C5.91699 8.83334 6.16699 9.58334 6.66699 10.25C7.58366 11.5833 8.75033 12.6667 10.167 13.3333C10.5837 13.5 10.917 13.6667 11.3337 13.75C11.7503 13.9167 12.167 13.9167 12.667 13.8333C13.2503 13.75 13.7503 13.3333 14.0837 12.8333C14.2503 12.5 14.2503 12.1667 14.167 11.8333C14.167 11.8333 14.0003 11.75 13.8337 11.6667ZM15.917 4.08334C12.667 0.833344 7.41699 0.833344 4.16699 4.08334C1.50033 6.75001 1.00033 10.8333 2.83366 14.0833L1.66699 18.3333L6.08366 17.1667C7.33366 17.8333 8.66699 18.1667 10.0003 18.1667C14.5837 18.1667 18.2503 14.5 18.2503 9.91668C18.3337 7.75001 17.417 5.66668 15.917 4.08334ZM13.667 15.75C12.5837 16.4167 11.3337 16.8333 10.0003 16.8333C8.75033 16.8333 7.58366 16.5 6.50033 15.9167L6.25033 15.75L3.66699 16.4167L4.33366 13.9167L4.16699 13.6667C2.16699 10.3333 3.16699 6.16668 6.41699 4.08334C9.66699 2.00001 13.8337 3.08334 15.8337 6.25001C17.8337 9.50001 16.917 13.75 13.667 15.75Z" fill="white"/>
+                                </svg>
+                                </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button 
+                arial-expanded="false"
+                aria-label="Abrir menu"
+                onclick="openMenu()"
+                class="open-menu">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 20H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 12H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M18 28L30 28" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </button>
+                <button 
+                arrial-expanded="true"
+                aria-label="Fechar menu"
+                onclick="closeMenu()"
+                class="close-menu">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 1L1 21M1 1L21 21" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        
+                </button>
+
+                
+            </div>
+        </nav>
+
+        <section id="home">
+            <div class="wrapper">
+
+                <div class="col-a">
+
+               
+            <header>
+                <h4>BOAS-VINDAS A VIDA ANIMAIL RAÇÕES 👋</h4>
+                <h1>A melhor petshop para cuidar do seu pet.</h1>
+            </header>
+
+            <div class="content">
+           
+            <p>Nosso atendimento vai além da venda, queremos que nosso cliente tenha a melhor experiência na loja.</p>
+            <a class="button" href="https://wa.me/5522992070460" target="_blank"> 
+        
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.8337 11.6667C13.667 11.5833 12.5837 11.0833 12.417 11C12.2503 10.9167 12.0837 10.9167 11.917 11.0833C11.7503 11.25 11.417 11.75 11.2503 11.9167C11.167 12.0833 11.0003 12.0833 10.8337 12C10.2503 11.75 9.66699 11.4167 9.16699 11C8.75033 10.5833 8.33366 10.0833 8.00033 9.58334C7.91699 9.41668 8.00033 9.25001 8.08366 9.16668C8.16699 9.08334 8.25033 8.91668 8.41699 8.83334C8.50033 8.75001 8.58366 8.58334 8.58366 8.50001C8.66699 8.41668 8.66699 8.25001 8.58366 8.16668C8.50033 8.08334 8.08366 7.08334 7.91699 6.66668C7.83366 6.08334 7.66699 6.08334 7.50033 6.08334C7.41699 6.08334 7.25033 6.08334 7.08366 6.08334C6.91699 6.08334 6.66699 6.25001 6.58366 6.33334C6.08366 6.83334 5.83366 7.41668 5.83366 8.08334C5.91699 8.83334 6.16699 9.58334 6.66699 10.25C7.58366 11.5833 8.75033 12.6667 10.167 13.3333C10.5837 13.5 10.917 13.6667 11.3337 13.75C11.7503 13.9167 12.167 13.9167 12.667 13.8333C13.2503 13.75 13.7503 13.3333 14.0837 12.8333C14.2503 12.5 14.2503 12.1667 14.167 11.8333C14.167 11.8333 14.0003 11.75 13.8337 11.6667ZM15.917 4.08334C12.667 0.833344 7.41699 0.833344 4.16699 4.08334C1.50033 6.75001 1.00033 10.8333 2.83366 14.0833L1.66699 18.3333L6.08366 17.1667C7.33366 17.8333 8.66699 18.1667 10.0003 18.1667C14.5837 18.1667 18.2503 14.5 18.2503 9.91668C18.3337 7.75001 17.417 5.66668 15.917 4.08334ZM13.667 15.75C12.5837 16.4167 11.3337 16.8333 10.0003 16.8333C8.75033 16.8333 7.58366 16.5 6.50033 15.9167L6.25033 15.75L3.66699 16.4167L4.33366 13.9167L4.16699 13.6667C2.16699 10.3333 3.16699 6.16668 6.41699 4.08334C9.66699 2.00001 13.8337 3.08334 15.8337 6.25001C17.8337 9.50001 16.917 13.75 13.667 15.75Z" fill="white"/>
+            </svg>
+            
+        
+        faça seu pedido
+    </a>
+
+    </div>
+</div>
+
+    <div class="col-b">
+        <div class="fade-up"><img src="./assests/pagina inicial labrador.png" alt="foto da logo vida animal rações"></div>
+ 
+    </div>
+ 
+    
+    
+
+          <div class="stats">
+    <div class="stat">
+        <h3>+9.7</h3>
+        <p>Avaliações</p>
+    </div>
+
+    <div class="stat">
+        <h3>+20</h3>
+        <p>Rações disponiveis</p>
+    </div>
+
+    <div class="stat">
+        <h3>+12</h3>
+        <P>Anos no mercado</P>
+    </div>
+         </div>
+        </div>
+       </section>
+
+        <section id="services">
+           <div class="wrapper">
+               <header>
+                   <h4>Serviços</h4>
+                   <h2>Você é do tipo que sempre quer o melhor para o bem-estar do seu bichinho?</h2>
+               </header>
+
+               <div class="content">
+                   <div class="cards">
+                   <div class="card">
+                      
+                    <h3>Rações Premium</h3>
+                    <p>temos as melhores rações do mercado, Royal Canin, Farmina Natural & Delicious, Premier, 	
+                        Golden, GranPlus.</p>
+                   </div>
+              
+                <div class="card">
+                   
+                 <h3>Medicamentos</h3>
+                 <p>Os melhores preços de remedios da região dos lagos.</p>
+                </div>
+            
+
+                <div class="card">
+                   
+                 <h3>Vermifugo</h3>
+                 <p>Os melhores vermifugo para o seu dog você encontra na vida animal rações.</p>
+                </div>
+            
+
+                <div class="card">
+                   
+                 <h3>Pulga e Carrapato</h3>
+                 <p>Remedios para acabar com todas as pulgas e carrapatos no ambiente e no seu cachorro.</p>
+                </div>
+            
+
+                <div class="card">
+                   
+                 <h3>Biscoitos</h3>
+                 <p>Aqui você acha os petiscos que seu cão adora.</p>
+                </div>
+            
+
+                <div class="card">
+                   
+                 <h3>Brinquedos</h3>
+                 <p>Para distrar e divertir com seu pet, temos os melhores briquedos para o seu cão.</p>
+                </div>
+                
+            
+               </div> 
+             </div>
+           </div>
+        </section>
+
+        <section id="about">
+            <div class="wrapper">
+
+                <div class="col-a">
+
+                
+                <header>
+                    <h4>sobre nos</h4>
+                    <h2>
+                        Você é do tipo que sempre quer o melhor para o bem-estar do seu bichinho?
+                    </h2>
+                    </header>
+
+                <div class="content" >    
+                    <p>Então está no lugar certo: A Vida Animal Rações é um pet shop que tem tudo o que  seu animal de estimação precisa. Cachorro, gato, pássaro, peixe ou hamster. Vida Animal Rações, temos uma ampla oferta de produtos de qualidade, os menores preços e atendimento especializado para atender você e seu pet da melhor forma possível.
+                    </p>
+                   
+                </div> 
+               </div>
+                <div class="col-b">
+                    <img src="assests/pulando-removebg-preview.png" alt="propaganda da ração n&d com um cachorro vira lata e a ração.">
+                </div>
+                              
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="wrapper">
+
+                <div class="col-a">
+                <hedaer>
+                    <h2>Entre em contato com a gente!</h2>
+                </hedaer>
+
+                    <div class="content">
+                        <ul>
+                            <li>Av. dos Bandeirantes, 982 - Recreio, Rio das Ostras</li>
+                            <li>(22) 2771-4914</li>
+                        </ul>
+
+                        <a
+                        class="button"
+                         href="https://wa.me/5522992070460" target="_blank">
+                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.6 14.0001C16.4 13.9001 15.1 13.3001 14.9 13.2001C14.7 13.1001 14.5 13.1001 14.3 13.3001C14.1 13.5001 13.7 14.1001 13.5 14.3001C13.4 14.5001 13.2 14.5001 13 14.4001C12.3 14.1001 11.6 13.7001 11 13.2001C10.5 12.7001 10 12.1001 9.6 11.5001C9.5 11.3001 9.6 11.1001 9.7 11.0001C9.8 10.9001 9.9 10.7001 10.1 10.6001C10.2 10.5001 10.3 10.3001 10.3 10.2001C10.4 10.1001 10.4 9.9001 10.3 9.8001C10.2 9.7001 9.7 8.5001 9.5 8.0001C9.4 7.3001 9.2 7.3001 9 7.3001C8.9 7.3001 8.7 7.3001 8.5 7.3001C8.3 7.3001 8 7.5001 7.9 7.6001C7.3 8.2001 7 8.9001 7 9.7001C7.1 10.6001 7.4 11.5001 8 12.3001C9.1 13.9001 10.5 15.2001 12.2 16.0001C12.7 16.2001 13.1 16.4001 13.6 16.5001C14.1 16.7001 14.6 16.7001 15.2 16.6001C15.9 16.5001 16.5 16.0001 16.9 15.4001C17.1 15.0001 17.1 14.6001 17 14.2001C17 14.2001 16.8 14.1001 16.6 14.0001ZM19.1 4.9001C15.2 1.0001 8.9 1.0001 5 4.9001C1.8 8.1001 1.2 13.0001 3.4 16.9001L2 22.0001L7.3 20.6001C8.8 21.4001 10.4 21.8001 12 21.8001C17.5 21.8001 21.9 17.4001 21.9 11.9001C22 9.3001 20.9 6.8001 19.1 4.9001ZM16.4 18.9001C15.1 19.7001 13.6 20.2001 12 20.2001C10.5 20.2001 9.1 19.8001 7.8 19.1001L7.5 18.9001L4.4 19.7001L5.2 16.7001L5 16.4001C2.6 12.4001 3.8 7.4001 7.7 4.9001C11.6 2.4001 16.6 3.7001 19 7.5001C21.4 11.4001 20.3 16.5001 16.4 18.9001Z" fill="white"/>
+                            </svg>
+                            
+                            Faça o seu pedido
+                        </a>
+
+                        </div>
+                    </div>
+
+                        <div class="col-b">
+
+                        
+                        <img src="./assests/vida animal rações.png" alt="imagem da marca da loja">     
+
+                    </div>
+                
+            </div>
+        </section>
+        
+        <footer>
+            
+            <div class="wrapper">
+                <div class="col-a">
+
+                
+                <a class="logo" href="#home">
+
+                    <img src="assests/logo-aquanort.jpeg" alt="">                
+    
+                </a>
+    
+                <p>
+                    ©2022 vida animal rações. <br>
+                    Todos os direitos reservados.
+                </p>
+                </div>
+
+                <div class="col-b">
+
+                
+                <ul class="social-links">
+                    <li>
+                        <a target="_blank"
+                        href="https://intagram.com/vianimalraçoes">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7 2.99998C4.79086 2.99998 3 4.79085 3 6.99998V17C3 19.2091 4.79086 21 7 21H17C19.2091 21 21 19.2091 21 17V6.99998C21 4.79085 19.2091 2.99998 17 2.99998H7ZM1 6.99998C1 3.68628 3.68629 0.999985 7 0.999985H17C20.3137 0.999985 23 3.68628 23 6.99998V17C23 20.3137 20.3137 23 17 23H7C3.68629 23 1 20.3137 1 17V6.99998Z" fill="#000000"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4833 8.98923C11.8591 8.89667 11.2217 9.00328 10.6616 9.29391C10.1015 9.58453 9.64727 10.0444 9.36357 10.608C9.07988 11.1716 8.98113 11.8104 9.08138 12.4334C9.18163 13.0564 9.47577 13.6319 9.92196 14.0781C10.3682 14.5243 10.9437 14.8184 11.5667 14.9187C12.1897 15.0189 12.8284 14.9202 13.392 14.6365C13.9557 14.3528 14.4155 13.8986 14.7061 13.3385C14.9968 12.7784 15.1034 12.1409 15.0108 11.5167C14.9164 10.88 14.6197 10.2906 14.1646 9.83546C13.7095 9.38032 13.12 9.08364 12.4833 8.98923ZM9.74043 7.51866C10.6739 7.03429 11.7364 6.8566 12.7767 7.01086C13.8379 7.16822 14.8203 7.66269 15.5788 8.42124C16.3374 9.1798 16.8318 10.1622 16.9892 11.2234C17.1435 12.2637 16.9658 13.3261 16.4814 14.2596C15.997 15.1931 15.2306 15.9501 14.2912 16.423C13.3518 16.8958 12.2873 17.0604 11.2489 16.8933C10.2106 16.7262 9.2514 16.236 8.50775 15.4923C7.76409 14.7487 7.27386 13.7895 7.10678 12.7511C6.9397 11.7128 7.10428 10.6482 7.5771 9.70883C8.04993 8.76943 8.80693 8.00304 9.74043 7.51866Z" fill="#000000"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 6.49998C16.5 5.9477 16.9477 5.49998 17.5 5.49998H17.51C18.0623 5.49998 18.51 5.9477 18.51 6.49998C18.51 7.05227 18.0623 7.49998 17.51 7.49998H17.5C16.9477 7.49998 16.5 7.05227 16.5 6.49998Z" fill="#000000"/>
+                            </svg>
+                            
+                            
+                            </a>
+                    </li>
+                    <li>
+                        <a 
+                        target="_blank"
+                        href="https://facebook.com/vianimalraçoes">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 1.99997H15C13.6739 1.99997 12.4021 2.52675 11.4645 3.46444C10.5268 4.40212 10 5.67389 10 6.99997V9.99997H7V14H10V22H14V14H17L18 9.99997H14V6.99997C14 6.73475 14.1054 6.4804 14.2929 6.29286C14.4804 6.10533 14.7348 5.99997 15 5.99997H18V1.99997Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            </a>
+                    </li>
+                    <li>
+                        <a
+                        target="_blank"
+                        href="https://whatsapp.com/vianimalraçoes">
+                            <svg width="25" height="25" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.8337 11.6667C13.667 11.5833 12.5837 11.0833 12.417 11C12.2503 10.9167 12.0837 10.9167 11.917 11.0833C11.7503 11.25 11.417 11.75 11.2503 11.9167C11.167 12.0833 11.0003 12.0833 10.8337 12C10.2503 11.75 9.66699 11.4167 9.16699 11C8.75033 10.5833 8.33366 10.0833 8.00033 9.58334C7.91699 9.41668 8.00033 9.25001 8.08366 9.16668C8.16699 9.08334 8.25033 8.91668 8.41699 8.83334C8.50033 8.75001 8.58366 8.58334 8.58366 8.50001C8.66699 8.41668 8.66699 8.25001 8.58366 8.16668C8.50033 8.08334 8.08366 7.08334 7.91699 6.66668C7.83366 6.08334 7.66699 6.08334 7.50033 6.08334C7.41699 6.08334 7.25033 6.08334 7.08366 6.08334C6.91699 6.08334 6.66699 6.25001 6.58366 6.33334C6.08366 6.83334 5.83366 7.41668 5.83366 8.08334C5.91699 8.83334 6.16699 9.58334 6.66699 10.25C7.58366 11.5833 8.75033 12.6667 10.167 13.3333C10.5837 13.5 10.917 13.6667 11.3337 13.75C11.7503 13.9167 12.167 13.9167 12.667 13.8333C13.2503 13.75 13.7503 13.3333 14.0837 12.8333C14.2503 12.5 14.2503 12.1667 14.167 11.8333C14.167 11.8333 14.0003 11.75 13.8337 11.6667ZM15.917 4.08334C12.667 0.833344 7.41699 0.833344 4.16699 4.08334C1.50033 6.75001 1.00033 10.8333 2.83366 14.0833L1.66699 18.3333L6.08366 17.1667C7.33366 17.8333 8.66699 18.1667 10.0003 18.1667C14.5837 18.1667 18.2503 14.5 18.2503 9.91668C18.3337 7.75001 17.417 5.66668 15.917 4.08334ZM13.667 15.75C12.5837 16.4167 11.3337 16.8333 10.0003 16.8333C8.75033 16.8333 7.58366 16.5 6.50033 15.9167L6.25033 15.75L3.66699 16.4167L4.33366 13.9167L4.16699 13.6667C2.16699 10.3333 3.16699 6.16668 6.41699 4.08334C9.66699 2.00001 13.8337 3.08334 15.8337 6.25001C17.8337 9.50001 16.917 13.75 13.667 15.75Z" fill="black"/> 
+                            </svg>
+                            </a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+        </footer>
+
+        <a id="backToTopButton" href="#home">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" fill="#F8D12B"/>
+                <path d="M20 27V13" stroke="#FFF9F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13 20L20 13L27 20" stroke="#FFF9F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+                
+        </a>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+       <script src="./main.js"></script>
+
+    </body>
+</html>
